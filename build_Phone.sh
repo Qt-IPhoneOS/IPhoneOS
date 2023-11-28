@@ -21,7 +21,7 @@ cd build
 ~/Qt/6.5.1/gcc_64/bin/qmake6 ..
 make
 
-cd ../../Apps/Setting
+cd ../../Apps/Phone
 rm -rf build
 mkdir build
 cd build
@@ -29,4 +29,4 @@ cd build
 make
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/projects/IPhoneOS/Executable/
 export LD_LIBRARY_PATH
-./Setting
+./Phone
