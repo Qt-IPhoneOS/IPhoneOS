@@ -30,3 +30,4 @@ make
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/projects/IPhoneOS/Executable/
 export LD_LIBRARY_PATH
 ./Phone
+
