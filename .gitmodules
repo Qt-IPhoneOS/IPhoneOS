@@ -13,6 +13,6 @@
 [submodule "Apps/Setting"]
 	path = Apps/Setting
 	url = git@github.com:Qt-IPhoneOS/Setting.git
-[submodule "Apps/UICommon"]
-	path = Apps/UICommon
+[submodule "UICommon"]
+	path = UICommon
 	url = git@github.com:Qt-IPhoneOS/UICommon.git
