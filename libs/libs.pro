@@ -1,2 +1,3 @@
 TEMPLATE = subdirs
-SUBDIRS+= UICommon
+SUBDIRS+= UICommon \
+        MiddlewareLayer
