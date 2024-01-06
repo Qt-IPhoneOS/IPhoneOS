@@ -1,18 +1,18 @@
-[submodule "MiddlewareLayer"]
-	path = MiddlewareLayer
-	url = git@github.com:Qt-IPhoneOS/MiddlewareLayer.git
-[submodule "Services"]
-	path = Services
+[submodule "libs/Services"]
+	path = libs/Services
 	url = git@github.com:Qt-IPhoneOS/Services.git
-[submodule "Apps/Home"]
-	path = Apps/Home
-	url = git@github.com:Qt-IPhoneOS/Home.git
-[submodule "Apps/Phone"]
-	path = Apps/Phone
-	url = git@github.com:Qt-IPhoneOS/Phone.git
-[submodule "Apps/Setting"]
-	path = Apps/Setting
-	url = git@github.com:Qt-IPhoneOS/Setting.git
-[submodule "UICommon"]
-	path = UICommon
+[submodule "libs/MiddlewareLayer"]
+	path = libs/MiddlewareLayer
+	url = git@github.com:Qt-IPhoneOS/MiddlewareLayer.git
+[submodule "libs/UICommon"]
+	path = libs/UICommon
 	url = git@github.com:Qt-IPhoneOS/UICommon.git
+[submodule "apps/Home"]
+	path = apps/Home
+	url = git@github.com:Qt-IPhoneOS/Home.git
+[submodule "apps/Phone"]
+	path = apps/Phone
+	url = git@github.com:Qt-IPhoneOS/Phone.git
+[submodule "apps/Setting"]
+	path = apps/Setting
+	url = git@github.com:Qt-IPhoneOS/Setting.git
