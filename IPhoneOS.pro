@@ -2,9 +2,8 @@ QT += quick virtualkeyboard
 
 TEMPLATE = subdirs
 
-SUBDIRS += \
-        MiddlewareLayer \
-        Apps/Home \
-        Apps/UICommon \
-        Apps/Setting \
-        Apps/Phone
+SUBDIRS = ui.pro \
+          libs \
+          apps
+
+CONFIG += ordered
