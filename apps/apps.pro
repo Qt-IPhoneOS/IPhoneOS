@@ -5,7 +5,7 @@ SUBDIRS+=\
         Phone
 
 CONFIG += ordered
-Home.depends = ../libs UICommon
-Setting.depends = ../libs UICommon
-Phone.depends = ../libs UICommon
+Home.depends = ../libs UICommon MiddlewareLayer
+Setting.depends = ../libs UICommon MiddlewareLayer
+Phone.depends = ../libs UICommon MiddlewareLayer
 
