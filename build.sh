@@ -1,33 +1,35 @@
 #!/bin/bash
 
-cd Services
-rm -rf build
-mkdir build
-cd build
-cmake ..
-make
+folder_path="${PWD}/libs/Services/build"
+file_to_check="${PWD}/libs/Services/CMakeLists.txt"
 
-cd ../../Apps/UICommon
 rm -rf build
 mkdir build
 cd build
-~/Qt/6.5.3/gcc_64/bin/qmake6 ..
-make
+mkdir executable
+cd ..
 
-cd ../../../MiddlewareLayer
-rm -rf build
-mkdir build
-cd build
-~/Qt/6.5.3/gcc_64/bin/qmake6 ..
-make
+if [ -d "$folder_path" ]; then
+    cd libs/Services/build
+    make
+    cd ../../..
+else
+    echo "4"
+    cd libs/Services
+    mkdir build
+    cd build
+    cmake ..
+    make
+    cd ../../..
+fi
 
-cd ../../Apps/Phone
-rm -rf build
-mkdir build
-cd build
-~/Qt/6.5.3/gcc_64/bin/qmake6 ..
-make
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/projects/IPhoneOS/Executable/
-export LD_LIBRARY_PATH
-./Phone
+version=$(ls ~/Qt/ | grep "[0-9]")
+buildtool="$HOME/Qt/${version}/gcc_64/bin/qmake6 ${PWD}/IPhoneOS.pro"
+
+
+if [ -n "${buildtool}" ]; then
+    cd build || exit
+    eval "${buildtool}" 
+    make -j8
+fi
 
