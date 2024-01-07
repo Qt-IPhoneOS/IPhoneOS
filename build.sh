@@ -14,7 +14,6 @@ if [ -d "$folder_path" ]; then
     make
     cd ../../..
 else
-    echo "4"
     cd libs/Services
     mkdir build
     cd build
